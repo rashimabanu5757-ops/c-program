@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    float basicSalary, bonusPercentage, bonusAmount, totalSalary;
+
+    // Input basic salary
+    printf("Enter basic salary: ");
+    scanf("%f", &basicSalary);
+
+    // Input bonus percentage
+    printf("Enter bonus percentage: ");
+    scanf("%f", &bonusPercentage);
+
+    // Calculate bonus amount
+    bonusAmount = (bonusPercentage / 100) * basicSalary;
+
+    // Calculate total salary
+    totalSalary = basicSalary + bonusAmount;
+
+    // Display the result
+    printf("Bonus = %.2f\n", bonusAmount);
+    printf("Total salary after bonus = %.2f\n", totalSalary);
+
+    return 0;
+}
+O/P:
+Enter basic salary: 50000
+Enter bonus percentage: 10
+Bonus = 5000.00
+Total salary after bonus = 55000.00
