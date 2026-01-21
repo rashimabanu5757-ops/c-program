@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float units, bill;
+
+    // Input units consumed
+    printf("Enter units consumed: ");
+    scanf("%f", &units);
+
+    // Calculate bill based on slabs
+    if (units <= 100) {
+        bill = units * 1.5;
+    } else if (units <= 200) {
+        bill = 100 * 1.5 + (units - 100) * 2.5;
+    } else {
+        bill = 100 * 1.5 + 100 * 2.5 + (units - 200) * 3.5;
+    }
+
+    // Display the result
+    printf("Electricity bill = ₹%.2f\n", bill);
+
+    return 0;
+}
+O/P:
+Enter units consumed: 80
+Electricity bill = ₹120.00
