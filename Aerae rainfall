@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    float rainfall[5], sum = 0, average;
+
+    printf("Enter rainfall for 5 days:\n");
+    for (i = 0; i < 5; i++) {
+        scanf("%f", &rainfall[i]);
+        sum += rainfall[i];
+    }
+
+    average = sum / 5;
+    printf("Average rainfall = %.2f\n", average);
+
+    return 0;
+}
+O/P:
+Enter rainfall for 5 days:
+10
+12
+8
+15
+5
+Average rainfall = 10.00
