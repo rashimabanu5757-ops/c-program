@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct course {
+    int id;
+    char name[20];
+};
+
+int main() {
+    struct course c;
+    printf("Enter course id and name: ");
+    scanf("%d %s", &c.id, c.name);
+    printf("Course ID: %d\nCourse Name: %s\n", c.id, c.name);
+    return 0;
+}
+O/P:
+Enter course id and name: 101 C
+Course ID: 101
+Course Name: C
