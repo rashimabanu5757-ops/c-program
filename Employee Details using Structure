@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct emp {
+    int id;
+    float salary;
+};
+
+int main() {
+    struct emp e;
+    printf("Enter id and salary: ");
+    scanf("%d %f", &e.id, &e.salary);
+    printf("ID: %d\nSalary: %.2f\n", e.id, e.salary);
+    return 0;
+}
+O/P:
+Enter id and salary: 101 25000
+ID: 101
+Salary: 25000.00
