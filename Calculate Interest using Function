@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+float calcInterest(float principal, float rate, int time) {
+    return (principal * rate * time) / 100;
+}
+
+int main() {
+    float p, r;
+    int t;
+    printf("Enter principal, rate, time: ");
+    scanf("%f %f %d", &p, &r, &t);
+    printf("Interest = %.2f\n", calcInterest(p,r,t));
+    return 0;
+}
+O/P:
+Enter principal, rate, time: 1000 5 2
+Interest = 100.00
