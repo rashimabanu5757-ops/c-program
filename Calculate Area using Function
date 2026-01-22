@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float area(float r) {
+    return 3.14 * r * r;
+}
+
+int main() {
+    float rad;
+    printf("Enter radius: ");
+    scanf("%f", &rad);
+    printf("Area = %.2f\n", area(rad));
+    return 0;
+}
+O/P:
+Enter radius: 5
+Area = 78.50
