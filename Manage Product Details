@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct product {
+    int code;
+    float price;
+};
+
+int main() {
+    struct product p;
+    printf("Enter product code and price: ");
+    scanf("%d %f", &p.code, &p.price);
+    printf("Code: %d\nPrice: %.2f\n", p.code, p.price);
+    return 0;
+}
+O/P:
+Enter product code and price: 501 99.5
+Code: 501
+Price: 99.50
