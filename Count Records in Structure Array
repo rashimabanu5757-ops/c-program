@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct data{ int x; };
+
+int main(){
+    struct data d[5];
+    int n=5;
+    printf("Total Records=%d\n",n);
+    return 0;
+}
+
+
+Output:
+
+Total Records=5
