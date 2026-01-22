@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int validate(char user[], char pass[]) {
+    return strcmp(user,"admin")==0 && strcmp(pass,"1234")==0;
+}
+
+int main() {
+    char u[20], p[20];
+    printf("Username: "); scanf("%s", u);
+    printf("Password: "); scanf("%s", p);
+    if(validate(u,p))
+        printf("Login Successful\n");
+    else
+        printf("Login Failed\n");
+    return 0;
+}
+O/P:
+Username: admin
+Password: 1234
+Login Successful
