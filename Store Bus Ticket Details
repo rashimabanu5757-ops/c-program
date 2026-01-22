@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct ticket {
+    int seat;
+    float fare;
+};
+
+int main() {
+    struct ticket t;
+    printf("Enter seat number and fare: ");
+    scanf("%d %f", &t.seat, &t.fare);
+    printf("Seat: %d\nFare: %.2f\n", t.seat, t.fare);
+    return 0;
+}
+O/P:
+Enter seat number and fare: 12 450
+Seat: 12
+Fare: 450.00
