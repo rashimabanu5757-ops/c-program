@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, present, count = 0;
+
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+
+    printf("Enter 1 for present and 0 for absent for each student:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &present);
+        if (present == 1) {
+            count++;
+        }
+    }
+
+    printf("Number of present students = %d\n", count);
+
+    return 0;
+}
+O/P:
+Enter the number of students: 5
+Enter 1 for present and 0 for absent for each student:
+1
+0
+1
+1
+0
+Number of present students = 3
