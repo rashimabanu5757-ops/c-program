@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float cToF(float c) {
+    return (c * 9/5) + 32;
+}
+
+int main() {
+    float c;
+    printf("Enter Celsius: ");
+    scanf("%f", &c);
+    printf("Fahrenheit = %.2f\n", cToF(c));
+    return 0;
+}
+O/P:
+Enter Celsius: 37
+Fahrenheit = 98.60
