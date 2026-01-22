@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct bank {
+    int accNo;
+    float balance;
+};
+
+int main() {
+    struct bank b;
+    printf("Enter account number and balance: ");
+    scanf("%d %f", &b.accNo, &b.balance);
+    printf("Account No: %d\nBalance: %.2f\n", b.accNo, b.balance);
+    return 0;
+}
+O/P:
+Enter account number and balance: 12345 5000
+Account No: 12345
+Balance: 5000.00
