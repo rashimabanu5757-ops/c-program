@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int marks, total = 0;
+
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("Enter marks of student %d: ", i);
+        scanf("%d", &marks);
+        total += marks;
+    }
+
+    printf("Total marks of %d students = %d\n", n, total);
+
+    return 0;
+}
+O/P:
+Enter number of students: 3
+Enter marks of student 1: 75
+Enter marks of student 2: 80
+Enter marks of student 3: 65
+Total marks of 3 students = 220
