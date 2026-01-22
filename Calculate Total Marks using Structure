@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct marks {
+    int m1, m2, m3;
+};
+
+int main() {
+    struct marks m;
+    int total;
+    printf("Enter 3 marks: ");
+    scanf("%d %d %d", &m.m1, &m.m2, &m.m3);
+    total = m.m1 + m.m2 + m.m3;
+    printf("Total Marks = %d\n", total);
+    return 0;
+}
+O/P:
+Enter 3 marks: 70 80 90
+Total Marks = 240
