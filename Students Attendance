@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+
+    printf("Attendance numbers are:\n");
+
+    for (i = 1; i <= n; i++) {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+O/P:
+Enter number of students: 5
+Attendance numbers are:
+1
+2
+3
+4
+5
