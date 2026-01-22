@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+struct item{ int id; int qty; };
+
+int main(){
+    struct item i={101,5};
+    printf("ID=%d Qty=%d\n",i.id,i.qty);
+    return 0;
+}
+
+
+Output:
+
+ID=101 Qty=5
